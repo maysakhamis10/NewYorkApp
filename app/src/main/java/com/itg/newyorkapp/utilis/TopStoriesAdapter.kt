@@ -26,7 +26,7 @@ class TopStoriesAdapter (private val stories: ArrayList<ResultStories>,
         holder.favImage.setOnClickListener{
             Log.d("FROM BIND FAV", "${stories[position].title}!")
             OnStoryClick(stories[position],true)
-//            holder.favImage.setImageResource(R.drawable.ic_heart)
+            holder.favImage.setImageResource(R.drawable.ic_heart)
         }
 
         holder.itemView.setOnClickListener{
