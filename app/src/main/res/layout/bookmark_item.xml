@@ -44,7 +44,7 @@
                 android:layout_margin="10dp"
                 android:maxLines="3"
                 android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+                />
 
             <TextView
                 android:id="@+id/published_date"
