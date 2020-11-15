@@ -65,8 +65,6 @@ class NewFeedsFragment : Fragment() {
         viewModel.fetchTopStoriesLiveData().observe(viewLifecycleOwner) {
             it.let { resource ->
                 when (resource.status) {
-
-
                     ResponseStatus.SUCCESS -> {
                         resource.data?.let { topStories ->
                             storiesRecyclerView.visibility = View.VISIBLE
