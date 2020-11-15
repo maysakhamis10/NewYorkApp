@@ -13,7 +13,6 @@ import com.example.newyorktimes.data.datamodels.ResultStories
 import com.example.newyorktimes.utilis.BookMarksAdapter
 import com.example.newyorktimes.viewmodels.CommunicatorViewModel
 import com.itg.newyorkapp.R
-import java.lang.reflect.Array
 
 
 class BookMarksFragment : Fragment() {

@@ -20,19 +20,19 @@ class TopStoriesAdapter (private val stories: ArrayList<ResultStories>,
         return stories.size
     }
 
-    override fun onBindViewHolder(holder: TopStoriesAdapter.StoriesHolder, position: Int) {
+    override fun onBindViewHolder(holder: StoriesHolder, position: Int) {
         val itemStories = stories[position]
         holder.bind(itemStories)
         holder.favImage.setOnClickListener{
             Log.d("FROM BIND FAV", "${stories[position].title}!")
             OnStoryClick(stories[position],true)
-            holder.favImage.setImageResource(R.drawable.ic_heart)
+//            holder.favImage.setImageResource(R.drawable.ic_heart)
         }
 
         holder.itemView.setOnClickListener{
             Log.d("FROM BIND item ", "${stories[position].title}!")
             OnStoryClick(stories[position],false)
-           // isFavBtn( false)
+
         }
 
     }
