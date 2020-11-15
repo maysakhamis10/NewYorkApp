@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#F0F6F6"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.DetailsStory">
+<ImageView
+           android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/storyImage"
+                    android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/storyTitle"
+                android:layout_width="wrap_content"
+                android:maxLines="3"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_below="@id/storyImage"
+                android:layout_margin="10dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/published_date"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_below="@id/storyTitle"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/abstract_artical"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/published_date"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:autoLink="all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/artical_link"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/abstract_artical"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

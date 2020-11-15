@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        xmlns:card_view="http://schemas.android.com/tools"
+        card_view:cardCornerRadius="40dp"
+        card_view:cardElevation="20dp"
+        card_view:contentPadding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+          <FrameLayout
+              android:id="@+id/imageLayout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="250dp"
+                  android:scaleType="centerCrop"
+                  android:id="@+id/storyImage"
+                  android:contentDescription="TODO" />
+
+
+              <ImageView
+                  android:background="@drawable/ic_unselectedheart"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:scaleType="centerCrop"
+                  android:id="@+id/bookMark"
+                  android:layout_margin="10dp"
+                  android:layout_gravity="bottom|end"
+                  android:contentDescription="TODO" />
+</FrameLayout>
+            <TextView
+                android:id="@+id/storyTitle"
+                android:layout_width="wrap_content"
+                android:maxLines="3"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_below="@id/imageLayout"
+                android:layout_margin="10dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/published_date"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_below="@id/storyTitle"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
