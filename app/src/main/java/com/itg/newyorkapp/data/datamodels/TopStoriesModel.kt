@@ -1,6 +1,8 @@
 package com.example.newyorktimes.data.datamodels
 
+import androidx.room.Entity
 import com.google.gson.annotations.SerializedName
+
 
 data class TopStoriesModel(
     @SerializedName("copyright")

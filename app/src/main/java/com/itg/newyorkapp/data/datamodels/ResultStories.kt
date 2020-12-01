@@ -1,20 +1,29 @@
 package com.example.newyorktimes.data.datamodels
 
 import android.os.Parcelable
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "top_stories")
 data class ResultStories(
 
+
+
+    @PrimaryKey val uid: Int,
+
+
     @SerializedName("abstract")
-    val `abstract`: String,
+    @ColumnInfo(name = "abstract") val `abstract`: String,
 
 
     @SerializedName("byline")
-    val byline: String,
+    @ColumnInfo(name = "byline")  val byline: String,
 
 
     @SerializedName("created_date")
-    val created_date: String,
+    @ColumnInfo(name = "created_date") val created_date: String,
 
 
     @SerializedName("des_facet")
@@ -43,26 +52,26 @@ data class ResultStories(
     val per_facet: List<String>,
 
     @SerializedName("published_date")
-    val published_date: String,
+    @ColumnInfo(name = "published_date") val published_date: String,
 
     @SerializedName("section")
-    val section: String,
+    @ColumnInfo(name = "section") val section: String,
 
     @SerializedName("short_url")
-    val short_url: String,
+    @ColumnInfo(name = "short_url")  val short_url: String,
 
     @SerializedName("subsection")
-    val subsection: String,
+    @ColumnInfo(name = "subsection") val subsection: String,
 
     @SerializedName("title")
-    val title: String,
+    @ColumnInfo(name = "title")  val title: String,
 
     @SerializedName("updated_date")
-    val updated_date: String,
+    @ColumnInfo(name = "updated_date") val updated_date: String,
 
     @SerializedName("uri")
-    val uri: String,
+    @ColumnInfo(name = "uri") val uri: String,
 
     @SerializedName("url")
-    val url: String
+    @ColumnInfo(name = "url") val url: String
 )

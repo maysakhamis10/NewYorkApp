@@ -41,6 +41,8 @@ class NewFeedsFragment : Fragment() {
         initViews(view)
         initViewModel()
         viewModelCallBack()
+
+//        viewModelScope
         return view
     }
 
@@ -54,10 +56,10 @@ class NewFeedsFragment : Fragment() {
 
 
     private fun initViewModel() {
-        viewModel = ViewModelProviders.of(
-            this,
-            ViewModelFactory(ApiHelper(RetrofitBuilder().apiService))
-        ).get(MainViewModel::class.java)
+//        viewModel = ViewModelProviders.of(
+//            this,
+//            ViewModelFactory(ApiHelper(RetrofitBuilder().apiService,))
+//        ).get(MainViewModel::class.java)
     }
 
     private fun viewModelCallBack() {
